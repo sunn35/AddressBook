@@ -45,11 +45,7 @@ bool check_date(char *date,char *month,char *year){
 	else
 		return true;
 }
-
-	/*concatenate(char *name,int number){
-		string mystr;
-		mystr= *name<<number;
-	}*/	
+	
 /*void concatenate(*name,num)
 {
 	//char arr[50]={'q','w','e','r','t','y','u','i','o','p'};
