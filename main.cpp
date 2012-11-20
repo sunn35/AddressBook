@@ -3,6 +3,8 @@
 
 int main(){
 	AddressBook *data=new AddressBook("Address_Book.txt");
-	data->AddEntry();
+//	data->AddEntry();
+	data->SearchEntry();
+	
 	return 1;
 }
