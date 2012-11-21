@@ -7,7 +7,7 @@ void Student::invalid_input(){
 void Student::GetInfo(){
 
 	cout<<"NAME: ";
-	cin.getline(name,50);
+//	cin.getline(name,50);
 	while(true)
 	{
 		cin.getline(name,50);

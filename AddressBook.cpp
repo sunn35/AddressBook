@@ -25,6 +25,7 @@ void AddressBook::SearchEntry(){
 	cout<<"Enter name to be searched: ";
 	cin>>name;
 	read.open(filename);
+//	read.getline(data,50);
 	while(!read.eof())
 	{
 		read.getline(data,50);

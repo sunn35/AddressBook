@@ -9,6 +9,7 @@ void Menu(){
 	cout<<"1.Add Entry \n2.Search Entry \n3.Delete Entry \n4.Exit \n";
 	cout<<"Please enter your choice: ";
 	cin>>choice;
+	cin.ignore(256,'\n');
 	switch (choice)
 	{
 		case 1:
