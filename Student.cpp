@@ -5,7 +5,9 @@ void Student::invalid_input(){
 }
 	
 void Student::GetInfo(){
+
 	cout<<"NAME: ";
+	cin.getline(name,50);
 	while(true)
 	{
 		cin.getline(name,50);
@@ -83,9 +85,8 @@ void Student::PrintInfo(){
 
 bool Student::check_char_validity(char *input)
 {
-	int i,length,check;
-	length=strlen(input);
-	for (i=0;i<length;i++)
+	int i;
+	for (i=0;i<strlen(input);i++)
 	{
 		if(!isalpha(name[i]) && input[i]!=' ')
 		{
@@ -97,9 +98,8 @@ bool Student::check_char_validity(char *input)
 
 bool Student::check_int_validity(char *input)
 {
-	int i,length;
-	length=strlen(input);
-	for(i=0;i<length;i++)
+	int i;
+	for(i=0;i<strlen(input);i++)
 	{
 		if(!isdigit(input[i]))
 		{
@@ -118,9 +118,5 @@ void Student::write_to_file(const char* filename){
 	write<<phon_num<<endl;
 	write<<mobil<<endl;
 	write<<date<<"/"<<month<<"/"<<year<<endl;
-	write<<"----------------------------------------------";
 	write.close();
-
 }
-
-	

@@ -2,7 +2,7 @@ CC = g++
 
 AddressBook : ./Student.o ./main.o ./AddressBook.o
 	$(CC) -g -o ./AddressBook ./Student.o ./main.o ./AddressBook.o
-#	rm -f *~
+	rm -f *~
 
 ./Student.o : ./Student.cpp
 	$(CC) -g -c -o ./Student.o ./Student.cpp
