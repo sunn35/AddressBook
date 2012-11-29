@@ -35,6 +35,13 @@ void AddressBook::SearchEntry(){
 			dataFound=true;
 			cout<<"NAME: "<<data<<endl;
 	 		read.getline(data,50);
+	 		if(data[0]=='#')
+			{
+				for (i=0 ; i<5 ; i++)
+					read.getline(data,50);
+				cout<<"DATA HAS BEEN DELETED\n";
+				break;
+			}
 			cout<<"ADDRESS: "<<data<<endl;
 			read.getline(data,50);
 			cout<<"EMAIL-ID: "<<data<<endl;
@@ -68,10 +75,6 @@ void AddressBook::DeleteEntry(){
 	while(!read.eof())
 	{
 		read.getline(data,50);
-		c=read.get();
-		if(c=='#')
-			for (i=0 ; i<5 ; i++)
-				read.getline(data,50);
 		if(strcmp(name,data)==0)
 		{
 			dataFound=true;			
