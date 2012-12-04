@@ -16,7 +16,7 @@ void AddressBook::AddEntry(){
 	student->write_to_file(filename);
 }
 
-void AddressBook::SearchEntry(){
+/*void AddressBook::SearchEntry(){
 	int i;
 	ifstream read;
 	char data[50],c;

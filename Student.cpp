@@ -7,7 +7,7 @@ void Student::invalid_input(){
 void Student::GetInfo(){
 
 	cout<<"NAME: ";
-//	cin.getline(name,50);
+	cin.getline(name,50);
 	while(true)
 	{
 		cin.getline(name,50);
@@ -88,7 +88,7 @@ bool Student::check_char_validity(char *input)
 	int i;
 	for (i=0;i<strlen(input);i++)
 	{
-		if(!isalpha(name[i]) && input[i]!=' ')
+		if(!isalpha(input[i]) && input[i]!=' ')
 		{
 			return false;
 		}
